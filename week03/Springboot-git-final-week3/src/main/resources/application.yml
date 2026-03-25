@@ -1,0 +1,72 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: springboot-git-stu-week3
+  mail:
+    host: ${MAIL_HOST:}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: ${MAIL_SMTP_AUTH:true}
+          starttls:
+            enable: ${MAIL_STARTTLS_ENABLE:true}
+  profiles:
+    active: dev
+
+app:
+  name: enterprise-admin-platform
+  version: 1.0.0
+  description: Spring Boot configuration and multi-profile homework project
+  published: false
+  upload-dir: target/uploads
+  author:
+    name: zjx
+    email: 3198937798@qq.com
+  features:
+    - configuration-properties
+    - multi-profile-management
+    - hutool-toolkit
+    - aliyun-sms-integration
+  database:
+    host: 127.0.0.1
+    port: 3306
+    username: root
+    password: dev-password
+  mail:
+    enabled: ${APP_MAIL_ENABLED:false}
+    from: ${APP_MAIL_FROM:${MAIL_USERNAME:}}
+    default-subject: ${APP_MAIL_DEFAULT_SUBJECT:Homework Notification}
+
+aliyun:
+  sms:
+    enabled: ${ALIYUN_SMS_ENABLED:false}
+    access-key-id: ${ALIYUN_SMS_ACCESS_KEY_ID:${ALIBABA_CLOUD_ACCESS_KEY_ID:}}
+    access-key-secret: ${ALIYUN_SMS_ACCESS_KEY_SECRET:${ALIBABA_CLOUD_ACCESS_KEY_SECRET:}}
+    endpoint: ${ALIYUN_SMS_ENDPOINT:dypnsapi.aliyuncs.com}
+    region-id: ${ALIYUN_SMS_REGION_ID:cn-hangzhou}
+    sign-name: ${ALIYUN_SMS_SIGN_NAME:}
+    template-code: ${ALIYUN_SMS_TEMPLATE_CODE:}
+    scheme-name: ${ALIYUN_SMS_SCHEME_NAME:default-scheme}
+
+minio:
+  enabled: ${MINIO_ENABLED:false}
+  endpoint: ${MINIO_ENDPOINT:http://127.0.0.1:9000}
+  access-key: ${MINIO_ACCESS_KEY:}
+  secret-key: ${MINIO_SECRET_KEY:}
+  bucket: ${MINIO_BUCKET:week03-homework}
+  public-url: ${MINIO_PUBLIC_URL:}
+
+deepseek:
+  enabled: ${DEEPSEEK_ENABLED:false}
+  api-url: ${DEEPSEEK_API_URL:https://api.deepseek.com/chat/completions}
+  api-key: ${DEEPSEEK_API_KEY:}
+  model: ${DEEPSEEK_MODEL:deepseek-chat}
+  system-prompt: ${DEEPSEEK_SYSTEM_PROMPT:You are a helpful assistant.}

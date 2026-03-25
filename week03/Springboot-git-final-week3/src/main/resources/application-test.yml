@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: springboot-git-stu-week3-test
+
+app:
+  name: enterprise-admin-platform-test
+  version: 1.0.2
+  description: Spring Boot configuration homework profile for testing
+  published: false
+  upload-dir: target/test-uploads
+  database:
+    host: test.localhost
+    port: 3307
+    username: test_user
+    password: test-password
+
+aliyun:
+  sms:
+    enabled: false

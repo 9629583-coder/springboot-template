@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: Springboot-git-stu-week3-test
+
+app:
+  app-name: 企业后台管理系统
+  version: 1.0.2
+  description: 基于 Spring Boot 3.5.11 for testing
+  author:
+    name: zjx
+    email: 3198937798@qq.com
+  features:
+    - Built with Spring Boot 3.5.11
+    - Test profile enabled
+    - Integrated Spring Data JPA
+    - Integrated Spring Data Redis
+  published: false

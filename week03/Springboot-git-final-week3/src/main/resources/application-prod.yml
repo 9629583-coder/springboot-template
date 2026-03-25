@@ -1,0 +1,16 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: springboot-git-stu-week3-prod
+
+app:
+  version: 1.0.3
+  description: Spring Boot configuration homework profile for production
+  published: true
+  database:
+    host: prod.example.com
+    port: 3306
+    username: prod_user
+    password: ${DB_PASSWORD:}

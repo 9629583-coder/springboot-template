@@ -1,0 +1,20 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: Springboot-git-stu-week3-prod
+
+app:
+  app-name: 企业后台管理系统
+  version: 1.0.3
+  description: 基于 Spring Boot 3.5.11 for production
+  author:
+    name: zjx
+    email: 3198937798@qq.com
+  features:
+    - Built with Spring Boot 3.5.11
+    - Production profile enabled
+    - Integrated Spring Security
+    - Integrated Spring Data Redis
+  published: true

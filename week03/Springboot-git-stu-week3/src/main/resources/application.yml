@@ -1,0 +1,31 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  profiles:
+    active: test
+
+
+# server:
+#   port: 8088
+#   servlet:
+#     context-path: /api
+#
+# spring:
+#   application:
+#     name: Springboot-git-stu-week3
+#
+# app:
+#   app-name: 企业后台管理系统
+#   version: 1.0.3
+#   description: 基于 Spring Boot 3.5.11
+#   author:
+#     name: zjx
+#     email: 3198937798@qq.com
+#   features:
+#     - Built with Spring Boot 3.5.11
+#     - Integrated Spring Security
+#     - Integrated Spring Data JPA
+#     - Integrated Spring Data Redis
+#   published: false
